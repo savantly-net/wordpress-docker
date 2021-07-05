@@ -4,6 +4,7 @@ EXPOSE 80
 
 COPY docker-entrypoint.sh /entrypoint.sh
 
-# grr, ENTRYPOINT resets CMD now
+# ENTRYPOINT resets CMD
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["apache2-foreground"]
+#CMD ["apache2-foreground"]
+CMD ["php-fpm"]

@@ -1,0 +1,9 @@
+version: "3"
+services:
+
+  webapp:
+    image: savantly/wordpress:php7.0
+    build: .
+    container_name: wordpress
+    ports:
+      - 80:80
